@@ -1,7 +1,7 @@
 ---
 layout: page
 title: About
-permalink: /about
+permalink: about
 ---
 ## Bio
 This page tells you a little bit about me.
