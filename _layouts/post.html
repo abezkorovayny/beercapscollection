@@ -2,9 +2,10 @@
 layout: default
 permalink: "/posts/:year/:month/:day/:title"
 ---
-<a href="{{ page.postsPageUrl }}"><< Back to Posts</a>
+{% include base.html %}
+<a href="{{ base }}{{ page.postsPageUrl }}"><< Back to Posts</a>
 <div class="post">
 	<h1>{{ page.title }}</h1>
 	{{ content }}
 </div>
-<a href="{{ page.postsPageUrl }}"><< Back to Posts</a>
+<a href="{{ base }}{{ page.postsPageUrl }}"><< Back to Posts</a>

@@ -1,7 +1,8 @@
+{% include base.html %}
 <nav>
   {% for item in site.data.navigation %}
 	{% if item.link != '/' %} | {% endif %}
-    <a href="{{ item.link }}" class="{% if page.url == item.link %}active{% endif %}">
+    <a href="{{ base }}{{ item.link }}" class="{% if page.url == item.link %}active{% endif %}">
       {{ item.name }}
     </a>
   {% endfor %}
