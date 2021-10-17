@@ -1,4 +1,4 @@
-# beercapscollection.github.io
+# beercapscollection
 Beer Caps Collection Project
 
 ## Overview
