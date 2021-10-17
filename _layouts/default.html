@@ -1,0 +1,14 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>{{ page.title }} | {{ page.siteTitle }}</title>
+	<link rel="stylesheet" href="/assets/css/styles.css">
+  </head>
+  <body>
+	{% include navigation.html %}
+    {{ content }}
+  <hr/>
+  {% include footer.html %}
+  </body>
+</html>
