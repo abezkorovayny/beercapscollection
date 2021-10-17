@@ -13,4 +13,4 @@ I hope you like it!
 ### Subsection
 
 ... which is shown in the screenshot below:
-![Screenshot]({{ '/assets/images/screenshot.jpg' | relative_url }})
+![Screenshot]({{ 'assets/images/screenshot.jpg' | relative_url }})

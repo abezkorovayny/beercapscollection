@@ -3,7 +3,7 @@
 	{% assign url = item.link | relative_url %}
 	{% if url == nil %}{% assign url = '/' %}{% endif %}
 	{% if url != '/' %} | {% endif %}
-    <a href="{{ url | relative_url }}" {% if page.url == url %}class="active"{% endif %}>
+    <a href="{{ url }}" {% if page.url == url %}class="active"{% endif %}>
       {{ item.name }}
     </a>
   {% endfor %}
