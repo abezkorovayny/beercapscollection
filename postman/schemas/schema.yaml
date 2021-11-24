@@ -50,11 +50,7 @@ components:
         name: ids
         example: "1,2,3"
         schema:
-            type: array
-            items: 
-                type: integer
-                minimum: 1
-                maximum: 999999
+            type: string
   schemas:
     Lots:
       type: object
