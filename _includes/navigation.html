@@ -2,7 +2,7 @@
   {% for item in site.data.navigation %}
     {% assign url = item.link | '/' + page.rootPath %}
 
-    {% unless item.root %} | {% endunless %}
+    {% unless item.root == 'true' %} | {% endunless %}
 
     <a href="{{ url }}" {% if page.url == url %}class="active"{% endif %}>
       {{ item.name }}
