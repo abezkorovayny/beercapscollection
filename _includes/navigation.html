@@ -1,11 +1,13 @@
 <nav>
   {% for item in site.data.navigation %}
-	{% assign url = item.link | relative_url %}
-	{% if url == nil %}{% assign url = '/' %}{% endif %}
-	{% if url != '/' %} | {% endif %}
+	{{ item.link }}
+    {% assign url = item.link | relative_url %}
+    {% if url == nil %}{% assign url = '/' %}{% endif %}
+    {% if url != '/' %} | {% endif %}
     <a href="{{ url }}" {% if page.url == url %}class="active"{% endif %}>
       {{ item.name }}
     </a>
   {% endfor %}
 </nav>
-{{ page.rootpath }}
+HERE: {{ page.rootpath }}
+{{ relative_url }}
