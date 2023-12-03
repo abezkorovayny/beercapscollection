@@ -1,5 +1,6 @@
 - name: Home
   link: 
+  root: true
 - name: About
   link: about
 - name: Posts
