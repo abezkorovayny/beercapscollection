@@ -11,4 +11,4 @@ defaults:
         layout: "default"
         siteTitle: "Beer Caps Collection"
         copyright: "&copy; 2021 AB Labs"
-        rootPath: "beercapscollection"
+        baseurl: "beercapscollection"
