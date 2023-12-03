@@ -1,14 +1,16 @@
 <nav>
   {% for item in site.data.navigation %}
-	X{{ item.link }}X
-	X{{ relative_url }}X
     {% assign url = item.link | relative_url %}
-	X{{ url }}X
-    {% if url == '' %}{% assign url = '/' | page.rootPath %}{% endif %}
-    {% if url != '/' %} | {% endif %}
+    {% assign rootUrl = '/' + page.rootPath %}
+
+    {% if item.link == '/' %}
+	{% assign url = rootUrl %}
+    { else } | {% endif %}
+	
     <a href="{{ url }}" {% if page.url == url %}class="active"{% endif %}>
       {{ item.name }}
     </a>
+	
   {% endfor %}
 </nav>
 
