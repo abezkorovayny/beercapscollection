@@ -3,7 +3,7 @@
     {% assign url = item.link | relative_url %}
     {% assign rootUrl = '/' + page.rootPath %}
 
-    {% if url != '/' %} | {% endif %}
+    {% if item.link != '' %} | {% endif %}
     {% if item.link == '' %}
 	{% assign url = rootUrl %}
     {% endif %}
